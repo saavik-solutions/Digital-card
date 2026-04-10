@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0a1128;
+  --foreground: #ffffff;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: 'Be Vietnam Pro', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@layer utilities {
+  .bg-radial-gradient {
+    background-image: radial-gradient(var(--tw-gradient-stops));
+  }
+}
